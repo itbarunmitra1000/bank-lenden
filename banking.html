@@ -17,33 +17,36 @@
         <section class="grid grid-cols-3 gap-5  text-white">
             <div class="bg-blue-300 rounded py-8 pl-8">
                 <h1 class="text-2xl">Deposit</h1>
-                <h1 class="text-3xl">$ <span>0.00</span></h1>
+                <h1 class="text-3xl">$ <span id="total-deposit-money">0.00</span></h1>
             </div>
             <div class="bg-green-300 rounded py-8 pl-8">
                 <h1 class="text-2xl">Withdraw</h1>
-                <h1 class="text-3xl">$ <span>0.00</span></h1>
+                <h1 class="text-3xl">$ <span id="total-withdraw-money">0.00</span></h1>
             </div>
             <div class="bg-purple-300 rounded py-8 pl-8">
                 <h1 class="text-2xl">Balance</h1>
-                <h1 class="text-3xl">$ <span>1240.00</span></h1>
+                <h1 class="text-3xl">$ <span class="total-balance-money">1240.00</span></h1>
             </div>
         </section>
         <section class="grid grid-cols-2 gap-5 mt-16 ">
             <div class="bg-red-200 py-10 pl-8 rounded-md">
                 <h1 class="text-2xl mb-4" >Please Deposit</h1>
-                <input class="p-2 rounded-lg w-3/4 mb-3" type="text" placeholder="$ amount you want to deposit">
+                <input id="input-deposit-amount" class="p-2 rounded-lg w-3/4 mb-3" type="text" placeholder="$ amount you want to deposit">
                 <br>
-                <button id="login-button" class="py-2 px-5 bg-green-500 text-white rounded">Deposit</button>
+                <button id="deposit-button" class="py-2 px-5 bg-green-500 text-white rounded">Deposit</button>
             </div>
             <div class="bg-gray-200 py-10 pl-8 rounded-md">
                 <h1 class="text-2xl mb-4" >Please Withdraw</h1>
-                <input class="p-2 rounded-lg w-3/4 mb-3" type="text" placeholder="$ amount you want to Withdraw">
+                <input id="input-withdraw-amount" class="p-2 rounded-lg w-3/4 mb-3" type="text" placeholder="$ amount you want to Withdraw">
                 <br>
-                <button id="login-button" class="py-2 px-5 bg-green-500 text-white rounded">Withdraw</button>
+                <button id="withdraw-button" class="py-2 px-5 bg-green-500 text-white rounded">Withdraw</button>
             </div>
 
         </section>
     </main>
+
+
+    <script src="./bank-lenden.js"></script>
 
 </body>
 
